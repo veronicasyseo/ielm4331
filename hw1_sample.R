@@ -1,6 +1,7 @@
 # homework 1 question 3
 # due friday february 17
-price.BinaryTree <- function(s0, u, d = 1/u, r, payoff, timestep = 1, period = 1, collapse = TRUE, compound - "discrete") {
+
+price.BinaryTree <- function(s0, u, d = 1/u, r, payoff, timestep = 1, period = 1, collapse = TRUE, compound = "discrete") {
   
   # calculate the d/c factor with discrete / continuous compounding
   if (compound == "continuous")
