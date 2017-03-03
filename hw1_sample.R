@@ -10,7 +10,7 @@ price.BinaryTree <- function(s0, u, d = 1/u, r, payoff, timestep = 1, period = 1
     discount.factor <- 1 / (1 + r * timestep)
   
   # the risk-neutral probability
-  probability.neural.up <- (1 / discount.factor - d) / (u - d)
+  probability.neutral.up <- (1 / discount.factor - d) / (u - d)
   probability.neutral.down <- 1 - probability.neutral.up
   
   # adding collapsibility to tree
